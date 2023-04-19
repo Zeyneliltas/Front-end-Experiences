@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Mono:wght@300&family=Roboto:ital,wght@0,100;0,400;1,300;1,500;1,700&family=Titillium+Web:wght@400;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(bg.jpeg);
+    background-size: cover;
+    
+    
+
+
+
+
+}
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    color: rgb(222, 17, 17);
+    
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+
+
+}
+header nav .logo a {
+    color: rgb(211, 151, 31);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    column-gap: 30px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color .25s ease;
+}
+nav ul a {
+    color: rgb(230, 67, 8);
+    text-decoration: none;
+
+}
+nav .menu {
+    display: flex;
+    align-items: center;
+    column-gap: 48px;
+}
+.menu ul {
+    column-gap: 20px;
+}
+nav .menu .menu-button {
+    color: #0ba2c0;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.65);
+    cursor: pointer;
+    padding: 12px 24px;
+    border-radius: 56px;
+    transition: all .50s ease;
+}
+nav .menu .menu-button:hover {
+    background-color: tomato;
+    transform: 1s;
+/*! section strat */
+}
+.content {
+    color: beige;
+    height: calc(100vh-100px);
+    padding-top: 150px;
+    }
+    .content h1 {
+        color: white;
+        text-align: center;
+        font-size: 50px;
+    }
+    .content p {
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 25px;
+    }
+    .content .links {
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+        column-gap: 16px;
+    }
+    .content .links a {
+        background-color: white;
+        padding: 15px;
+        width: 150px;
+        color: black;
+        text-align: center;
+        font-size: 18px;
+        text-decoration: none;
+        border-radius: 50px;
+        transition: all .50s ease;
+
+    }
+    .content .links a:hover {
+        background-color: #0ba2c0;
+        color: white;
+    }
+/*! section end */
+@media(max-width:576px) {
+    .container {
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+.content {
+    padding-top: 50px;
+}
+.content h1 {
+    font-size: 36px;
+}
+.content p {
+    font-size: 16px;
+}
+.content .links {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+.content .links a {
+    padding: 10px;
+    width: 60%;
+
+}
